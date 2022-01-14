@@ -1,0 +1,15 @@
+.cta-button{
+    background-color: rgb(52, 11, 118);
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+.cta-button svg{
+    width: 24px;
+    height: 24px;
+}
