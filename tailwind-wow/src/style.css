@@ -1,0 +1,23 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+html{
+    @apply leading-8;
+}
+.content p, 
+.content ul, 
+.content ol, 
+.content h1, 
+.content h2, 
+.content h3,
+.content h4,
+.content h5,
+.content h6{
+    max-width: 650px;
+    @apply mx-auto my-4;
+}
+
+.content img{
+    @apply mx-auto max-w-full;
+}
+
+.content h1{@apply text-5xl leading-tight;}
+.content h2{@apply text-4xl leading-tight;}
