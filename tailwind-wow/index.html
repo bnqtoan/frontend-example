@@ -29,5 +29,26 @@
         <p>Tối, tôi dùng bữa tại nhà hàng. Resort có 3 nhà hàng với 3 phong cách ẩm thực Việt Nam, Ấn Độ và Italy, thay phiên phục vụ, tạo sự phong phú cho trải nghiệm ẩm thực của du khách. </p>
         <p>Ngày tôi đến rơi vào ngày phục vụ của nhà hàng món Việt. Tôi chọn combo hải sản gồm các loại cá, mực, ghẹ, ốc... Dù là hoạt động cách ngày, nhưng nguyên liệu của nhà hàng vẫn giữ được sự tươi ngon. </p>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+
+        var elems = document.querySelectorAll('p,img,ul,ol,h1,h2,h3,h4,h5,h6');
+
+        elems.forEach(function(elem){
+            elem.classList.add('wow');
+            elem.classList.add('animate__fadeInUp');
+        });
+    
+        wow = new WOW(
+          {
+            boxClass:     'wow',      // default
+            animateClass: 'animate__animated', // default
+            offset:       100,          // default
+            mobile:       true,       // default
+            live:         true        // default
+          }
+        );
+        wow.init();
+    </script>
 </body>
 </html>

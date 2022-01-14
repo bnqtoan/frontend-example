@@ -9,5 +9,11 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animatecss')({
+      classes: ['animate__animated', 'animate__fadeIn', 'animate__bounceIn','animate__fadeInUp','animate__tada'],
+      settings: {},
+      variants: [],
+    }),
+  ],
 }

@@ -2,3 +2,39 @@ html{
     padding: 0;
     margin: 0;
 }
+.running{
+    animation: running-animate 10s forwards;
+}
+
+@keyframes running-animate {
+    from{
+        transform: translate(0, 0);
+    }
+    to{
+        transform: translate(300px, 0);
+    }
+}
+
+.box{
+    width: 400px;
+    height: 400px;
+    background: purple; 
+    animation: example 10s forwards;
+}
+
+@keyframes example {
+    0%{
+        background: yellow;
+    }
+    25%{
+        background: red;
+        /* transform: scale(0.5) rotate(180deg); */
+        transform: translate(300px);
+    }
+    50%{
+        transform: translate(300px, 300px);
+    }
+    100%{
+        transform: scale(0.5) rotate(180deg);
+    }
+}
